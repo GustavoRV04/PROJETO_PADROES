@@ -10,10 +10,10 @@ Projeto: Cadastro de Produtos com Padrões Criacionais
 ## Por que escolhemos esses padrões
 
 ### Factory Method
-Escolhemos o padrão Factory Method para **centralizar a lógica de criação dos objetos `Desktop` e `Notebook`**. Isso nos permite criar objetos com diferentes atributos sem precisar modificar o código da aplicação principal. Além disso, facilita a extensão futura com novos tipos de produtos, como `Tablet`, sem alterar o código cliente.
+Escolhi o padrão Factory Method para **centralizar a lógica de criação dos objetos `Desktop` e `Notebook`**. Isso permite criar objetos com diferentes atributos sem precisar modificar o código da aplicação principal. Além disso, facilita a extensão futura com novos tipos de produtos, como `Tablet`, sem alterar o código cliente.
 
 ### Singleton
-Utilizamos o padrão Singleton para garantir que exista apenas **uma instância global do gerenciador de cadastros (`CadastroManager`)**. Isso é útil para manter um repositório centralizado dos objetos criados durante a execução, permitindo consistência e controle único sobre os dados.
+Utilizei o padrão Singleton para garantir que exista apenas **uma instância global do gerenciador de cadastros (`CadastroManager`)**. Isso é útil para manter um repositório centralizado dos objetos criados durante a execução, permitindo consistência e controle único sobre os dados.
 
 ---
 
