@@ -1,3 +1,8 @@
+from src.core.sistema_facade import SistemaFacade
+
+
+
+
 
 def test_sistema_facade():
     facade = SistemaFacade()
