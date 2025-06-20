@@ -1,4 +1,20 @@
 
+from abc import ABC, abstractmethod
+
+class ProdutoObserver(ABC):
+    @abstractmethod
+    def atualizar(self, produto):
+        pass
+
+class EmailNotificacaoObserver(ProdutoObserver):
+    def atualizar(self, produto):
+        print(f"Email enviado: O produto {produto.modelo} foi atualizado")
+
+class LogObserver(ProdutoObserver):
+    def atualizar(self, produto):
+        print(f"Log: Alteração no produto {produto.modelo} registrada")
+
+
 class Produto:
     def __init__(self, modelo, cor, preco):
         self.modelo = modelo
@@ -12,9 +28,6 @@ class Produto:
     def remover_observer(self, observer):
         self._observers.remove(observer)
 
-    def get_info(self):
-        return f"Modelo: {self.modelo}, Cor: {self.cor}, Preço: R${self.preco}"
-
     @property
     def preco(self):
         return self._preco
@@ -27,5 +40,3 @@ class Produto:
     def _notificar_observers(self):
         for observer in self._observers:
             observer.atualizar(self)
-
-    # ... outros métodos existentes ...

@@ -50,3 +50,25 @@ Novos testes para os padrões estruturais foram adicionados:
 ```bash
 pytest tests/test_decorator.py
 pytest tests/test_facade.py
+
+## Padrões Implementados - Fase Final
+
+### 1. Strategy
+Permite definir diferentes cálculos de desconto. Implementado para oferecer descontos específicos (Black Friday, estudante, etc.).
+
+### 2. Observer
+Cria um mecanismo de notificação quando o estado de um produto é alterado (como mudança de preço), permitindo que vários objetos sejam notificados automaticamente.
+
+## Testes
+Novos testes para os padrões comportamentais:
+```bash
+pytest tests/test_strategy.py
+pytest tests/test_observer.py
+
+
+
+## Padrões Implementados
+- ✅ Factory Method (Criacional)
+- ✅ Observer (Comportamental)
+- ✅ Strategy (Comportamental)
+- ✅ Decorator (Estrutural)

@@ -2,8 +2,6 @@ from src.core.sistema_facade import SistemaFacade
 
 
 
-
-
 def test_sistema_facade():
     facade = SistemaFacade()
     facade.cadastrar_produto("desktop", modelo="X1", cor="Preto", 
