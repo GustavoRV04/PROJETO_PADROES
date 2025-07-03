@@ -13,6 +13,8 @@ def main():
                                       preco=4200.0, potenciaDaFonte=600)
     notebook = sistema.cadastrar_produto("notebook", modelo="UltraBook Y", cor="Prata", 
                                        preco=5800.0, tempoDeBateria=10)
+    print("PRODUTO: ", desktop.modelo, "FOI CADASTRADO")
+    print("PRODUTO: ", notebook.modelo, "FOI CADASTRADO")
     
     print("\n=== CONFIGURAÇÃO DE OBSERVERS ===")
     # Adiciona observers e força uma notificação inicial
