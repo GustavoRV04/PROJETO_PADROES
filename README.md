@@ -7,7 +7,7 @@ Projeto: Cadastro de Produtos com Padrões Criacionais
 
 ---
 
-## Por que escolhemos esses padrões
+## Por que utilizar esses padrões
 
 ### Factory Method
 Escolhi o padrão Factory Method para **centralizar a lógica de criação dos objetos `Desktop` e `Notebook`**. Isso permite criar objetos com diferentes atributos sem precisar modificar o código da aplicação principal. Além disso, facilita a extensão futura com novos tipos de produtos, como `Tablet`, sem alterar o código cliente.
