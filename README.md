@@ -7,7 +7,7 @@ Projeto: Cadastro de Produtos com Padrões Criacionais
 
 ---
 
-## Por que escolhemos esses padrões
+## Por que utilizar esses padrões
 
 ### Factory Method
 Escolhi o padrão Factory Method para **centralizar a lógica de criação dos objetos `Desktop` e `Notebook`**. Isso permite criar objetos com diferentes atributos sem precisar modificar o código da aplicação principal. Além disso, facilita a extensão futura com novos tipos de produtos, como `Tablet`, sem alterar o código cliente.
@@ -50,3 +50,25 @@ Novos testes para os padrões estruturais foram adicionados:
 ```bash
 pytest tests/test_decorator.py
 pytest tests/test_facade.py
+
+## Padrões Implementados - Fase Final
+
+### 1. Strategy
+Permite definir diferentes cálculos de desconto. Implementado para oferecer descontos específicos (Black Friday, estudante, etc.).
+
+### 2. Observer
+Cria um mecanismo de notificação quando o estado de um produto é alterado (como mudança de preço), permitindo que vários objetos sejam notificados automaticamente.
+
+## Testes
+Novos testes para os padrões comportamentais:
+```bash
+pytest tests/test_strategy.py
+pytest tests/test_observer.py
+
+
+
+## Padrões Implementados
+- ✅ Factory Method (Criacional)
+- ✅ Observer (Comportamental)
+- ✅ Strategy (Comportamental)
+- ✅ Decorator (Estrutural)
